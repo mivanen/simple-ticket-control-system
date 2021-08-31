@@ -1,0 +1,15 @@
+body {
+  background-color: #F2F2F2;
+  color: #333;
+}
+
+mark {
+  display: inline-block;
+  background-color: #FFF;
+  font-size: 0.6em;
+  font-weight: 700;
+  color: #666;
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=styles.css.map*/

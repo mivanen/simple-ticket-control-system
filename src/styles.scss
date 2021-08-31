@@ -1,0 +1,22 @@
+
+$primary-color: #333;
+$block-border-color: #CCC;
+$block-bg-color: #FFF;
+
+body
+{
+	background-color: #F2F2F2;
+	color: $primary-color;
+}
+
+mark
+{
+	display: inline-block;
+	background-color: $block-bg-color;
+	font-size: 0.6em;
+	font-weight: 700;
+	color: #666;
+	text-transform: uppercase;
+	
+
+}

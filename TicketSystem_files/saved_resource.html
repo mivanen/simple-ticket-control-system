@@ -1,0 +1,12 @@
+
+<!-- saved from url=(0011)about:blank -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><div id="webpack-dev-server-client-overlay-div" style="position: fixed; box-sizing: border-box; inset: 0px; width: 100vw; height: 100vh; background-color: rgba(0, 0, 0, 0.85); color: rgb(232, 232, 232); font-family: Menlo, Consolas, monospace; font-size: large; padding: 2rem; line-height: 1.2; white-space: pre-wrap; overflow: auto;"><span style="color: #E36049">Failed to compile.</span><br><br>src/app/components/event/event.component.html<span style="font-weight:normal;opacity:1;color:#transparent;background:#transparent;">:9</span>:24<span style="font-weight:normal;opacity:1;color:#transparent;background:#transparent;"> - error</span><span style="color:#6D7891;"> TS2551: <span style="font-weight:normal;opacity:1;color:#transparent;background:#transparent;">Property 'ticket' does not exist on type 'EventComponent'. Did you mean 'tickets'?
+
+<span style="color:#transparent;background:#transparent;">9</span>            &lt;div *ngIf="ticket[0]!=''" class="ticket_block" *ngFor="let ticket of tickets; let y=index"&gt;
+<span style="color:#transparent;background:#transparent;"> </span>                        ~~~~~~</span>
+
+  src/app/components/event/event.component.ts<span style="font-weight:normal;opacity:1;color:#transparent;background:#transparent;">:6</span>:16<span style="font-weight:normal;opacity:1;color:#transparent;background:#transparent;">
+    <span style="color:#transparent;background:#transparent;">6</span>   templateUrl: './event.component.html',
+    <span style="color:#transparent;background:#transparent;"> </span>                ~~~~~~~~~~~~~~~~~~~~~~~~</span>
+    Error occurs in the template of component EventComponent.
+</span></div></body></html>

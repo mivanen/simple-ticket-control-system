@@ -1,0 +1,61 @@
+.sell_btn, .detail_block, .title_block
+{
+	width: 100%
+}
+
+.title_block
+{
+	text-align: center;
+}
+
+
+h4
+{
+	font-size: 1.2em;
+}
+
+
+.card label
+{
+	font-size: 0.8em;
+	font-weight: 600;
+	color: #666;
+	margin: 5px 0 0 0;
+}
+
+
+.tickets_block
+{
+	height: 100%;
+	border-bottom: 1px solid #CCC;
+	padding: 10px;
+	margin:0px; 
+	background-color: #FFF;
+
+
+}
+
+
+.ticket_list
+{
+	overflow: auto;
+	max-height: 650px;
+	
+}
+
+
+.return_btn
+{
+	font-size: 0.8em;
+	padding: 5px;
+	margin: 5px 0 0 0;
+
+}
+.ticket_card
+{
+	border: 1px solid #CCC;
+	border-radius: 5px;
+	margin:0 0 10px 0;
+	padding: 10px;
+	line-height: 0.8em;
+}

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:4200/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>TicketSystem</title>
+  <!--<base href="/">--><base href=".">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./TicketSystem_files/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+
+<link rel="stylesheet" href="./TicketSystem_files/styles.css"><style>h1.main_title[_ngcontent-sml-c45] {
+  font-size: 2em;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uXFwuLlxcYXBwLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBRUMsY0FBQTtBQUFEIiwiZmlsZSI6ImFwcC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbImgxLm1haW5fdGl0bGVcclxue1xyXG5cdGZvbnQtc2l6ZTogMmVtO1xyXG59Il19 */</style><style>.sell_btn[_ngcontent-sml-c46], .detail_block[_ngcontent-sml-c46], .title_block[_ngcontent-sml-c46] {
+  width: 100%;
+}
+
+.title_block[_ngcontent-sml-c46] {
+  text-align: center;
+}
+
+h4[_ngcontent-sml-c46] {
+  font-size: 1.2em;
+}
+
+.card[_ngcontent-sml-c46]   label[_ngcontent-sml-c46] {
+  font-size: 0.8em;
+  font-weight: 600;
+  color: #666;
+  margin: 5px 0 0 0;
+}
+
+.ticket_list[_ngcontent-sml-c46] {
+  height: 100%;
+  border-bottom: 1px solid #CCC;
+  padding: 10px;
+  margin: 0px;
+  background-color: #FFF;
+}
+
+.return_btn[_ngcontent-sml-c46] {
+  font-size: 0.8em;
+  padding: 3px;
+  margin: 5px;
+}
+
+.ticket_block[_ngcontent-sml-c46] {
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  margin: 0 0 10px 0;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uXFwuLlxcLi5cXC4uXFxldmVudC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUVDLFdBQUE7QUFBRDs7QUFHQTtFQUVDLGtCQUFBO0FBREQ7O0FBS0E7RUFFQyxnQkFBQTtBQUhEOztBQU9BO0VBRUMsZ0JBQUE7RUFDQSxnQkFBQTtFQUNBLFdBQUE7RUFDQSxpQkFBQTtBQUxEOztBQVNBO0VBRUMsWUFBQTtFQUNBLDZCQUFBO0VBQ0EsYUFBQTtFQUNBLFdBQUE7RUFDQSxzQkFBQTtBQVBEOztBQVdBO0VBRUMsZ0JBQUE7RUFDQSxZQUFBO0VBQ0EsV0FBQTtBQVREOztBQVlBO0VBRUMsc0JBQUE7RUFDQSxrQkFBQTtFQUNBLGtCQUFBO0FBVkQiLCJmaWxlIjoiZXZlbnQuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuc2VsbF9idG4sIC5kZXRhaWxfYmxvY2ssIC50aXRsZV9ibG9ja1xyXG57XHJcblx0d2lkdGg6IDEwMCVcclxufVxyXG5cclxuLnRpdGxlX2Jsb2NrXHJcbntcclxuXHR0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbn1cclxuXHJcblxyXG5oNFxyXG57XHJcblx0Zm9udC1zaXplOiAxLjJlbTtcclxufVxyXG5cclxuXHJcbi5jYXJkIGxhYmVsXHJcbntcclxuXHRmb250LXNpemU6IDAuOGVtO1xyXG5cdGZvbnQtd2VpZ2h0OiA2MDA7XHJcblx0Y29sb3I6ICM2NjY7XHJcblx0bWFyZ2luOiA1cHggMCAwIDA7XHJcbn1cclxuXHJcblxyXG4udGlja2V0X2xpc3Rcclxue1xyXG5cdGhlaWdodDogMTAwJTtcclxuXHRib3JkZXItYm90dG9tOiAxcHggc29saWQgI0NDQztcclxuXHRwYWRkaW5nOiAxMHB4O1xyXG5cdG1hcmdpbjowcHg7IFxyXG5cdGJhY2tncm91bmQtY29sb3I6ICNGRkY7XHJcblxyXG59XHJcblxyXG4ucmV0dXJuX2J0blxyXG57XHJcblx0Zm9udC1zaXplOiAwLjhlbTtcclxuXHRwYWRkaW5nOiAzcHg7XHJcblx0bWFyZ2luOiA1cHg7XHJcblxyXG59XHJcbi50aWNrZXRfYmxvY2tcclxue1xyXG5cdGJvcmRlcjogMXB4IHNvbGlkICNDQ0M7XHJcblx0Ym9yZGVyLXJhZGl1czogNXB4O1xyXG5cdG1hcmdpbjowIDAgMTBweCAwO1xyXG59Il19 */</style><script type="text/javascript" data-name="TokenSigning">(function() {
+    // Promises
+    var _eid_promises = {};
+    // Turn the incoming message from extension
+    // into pending Promise resolving
+    window.addEventListener("message", function(event) {
+        if (event.source !== window) return;
+        if (event.data.src && (event.data.src === "background.js")) {
+            console.log("Page received: ");
+            console.log(event.data);
+            // Get the promise
+            if (event.data.nonce) {
+                var p = _eid_promises[event.data.nonce];
+                // resolve
+                if (event.data.result === "ok") {
+                    if (event.data.signature !== undefined) {
+                        p.resolve({hex: event.data.signature});
+                    } else if (event.data.version !== undefined) {
+                        p.resolve(event.data.extension + "/" + event.data.version);
+                    } else if (event.data.cert !== undefined) {
+                        p.resolve({hex: event.data.cert});
+                    } else {
+                        console.log("No idea how to handle message");
+                        console.log(event.data);
+                    }
+                } else {
+                    // reject
+                    p.reject(new Error(event.data.result));
+                }
+                delete _eid_promises[event.data.nonce];
+            } else {
+                console.log("No nonce in event msg");
+            }
+        }
+    }, false);
+
+    window.TokenSigning = function() {
+        function nonce() {
+            var val = "";
+            var hex = "abcdefghijklmnopqrstuvwxyz0123456789";
+            for (var i = 0; i < 16; i++) val += hex.charAt(Math.floor(Math.random() * hex.length));
+            return val;
+        }
+
+        function messagePromise(msg) {
+            return new Promise(function(resolve, reject) {
+                // amend with necessary metadata
+                msg["nonce"] = nonce();
+                msg["src"] = "page.js";
+                // send message
+                window.postMessage(msg, "*");
+                // and store promise callbacks
+                _eid_promises[msg.nonce] = {
+                    resolve: resolve,
+                    reject: reject
+                };
+            });
+        }
+        this.getCertificate = function(options) {
+            var msg = {type: "CERT", lang: options.lang, filter: options.filter};
+            console.log("getCertificate()");
+            return messagePromise(msg);
+        };
+        this.sign = function(cert, hash, options) {
+            var msg = {type: "SIGN", cert: cert.hex, hash: hash.hex, hashtype: hash.type, lang: options.lang, info: options.info};
+            console.log("sign()");
+            return messagePromise(msg);
+        };
+        this.getVersion = function() {
+            console.log("getVersion()");
+            return messagePromise({
+                type: "VERSION"
+            });
+        };
+    };
+})();</script></head>
+<body>
+  <app-root _nghost-sml-c45="" ng-version="11.2.14"><div _ngcontent-sml-c45="" class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow"><h1 _ngcontent-sml-c45="" class="main_title mr-md-auto font-weight-normal">Simple ticket control system</h1><nav _ngcontent-sml-c45="" class="my-2 my-md-0 mr-md-3"><a _ngcontent-sml-c45="" routerlink="/" class="p-2 text-dark" ng-reflect-router-link="/" href="http://localhost:4200/">Events</a><a _ngcontent-sml-c45="" routerlink="/ticket" class="p-2 text-dark" ng-reflect-router-link="/ticket" href="http://localhost:4200/ticket">Ticket</a></nav></div><div _ngcontent-sml-c45="" class="container"><router-outlet _ngcontent-sml-c45=""></router-outlet><app-event _nghost-sml-c46=""><div _ngcontent-sml-c46="" class="row"><div _ngcontent-sml-c46="" class="col-3 ticket_list"><h3 _ngcontent-sml-c46=""> Tickets</h3><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--></div><div _ngcontent-sml-c46="" class="col"><h2 _ngcontent-sml-c46=""> Events</h2><div _ngcontent-sml-c46="" class="row"><div _ngcontent-sml-c46="" class="col-md-4"><div _ngcontent-sml-c46="" class="card flex-md-row mb-4 box-shadow h-md-250"><div _ngcontent-sml-c46="" class="card-body d-flex flex-column align-items-start"><img _ngcontent-sml-c46="" data-holder-rendered="true" class="card-img-right flex-auto d-none d-block" style="width: 100%;" src="./TicketSystem_files/104-600x300.jpg"><div _ngcontent-sml-c46="" class="title_block"><h3 _ngcontent-sml-c46="" class="mb-0">концерт</h3></div><div _ngcontent-sml-c46="" class="detail_block"><mark _ngcontent-sml-c46="">Nr.:</mark> 1<br _ngcontent-sml-c46=""><mark _ngcontent-sml-c46="">Date:</mark> 01.09.2021 - 12:00<br _ngcontent-sml-c46=""><mark _ngcontent-sml-c46="">Price:</mark> 59 €<br _ngcontent-sml-c46=""><div _ngcontent-sml-c46=""><mark _ngcontent-sml-c46="">Avaible tickets:</mark><b _ngcontent-sml-c46=""><span _ngcontent-sml-c46=""> 3 of </span> 3 tk. </b><br _ngcontent-sml-c46=""><button _ngcontent-sml-c46="" class="btn btn-success sell_btn">Sell ticket</button></div><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><div _ngcontent-sml-c46=""><p _ngcontent-sml-c46="" class="card-text mb-auto">Lorem ipsum dolor. </p><hr _ngcontent-sml-c46=""><button _ngcontent-sml-c46="" class="btn btn-warning btn-mdm">Edit</button><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--></div></div></div></div></div><div _ngcontent-sml-c46="" class="col-md-4"><div _ngcontent-sml-c46="" class="card flex-md-row mb-4 box-shadow h-md-250"><div _ngcontent-sml-c46="" class="card-body d-flex flex-column align-items-start"><img _ngcontent-sml-c46="" data-holder-rendered="true" class="card-img-right flex-auto d-none d-block" style="width: 100%;" src="./TicketSystem_files/514-600x300.jpg"><div _ngcontent-sml-c46="" class="title_block"><h3 _ngcontent-sml-c46="" class="mb-0">мюзикл</h3></div><div _ngcontent-sml-c46="" class="detail_block"><mark _ngcontent-sml-c46="">Nr.:</mark> 2<br _ngcontent-sml-c46=""><mark _ngcontent-sml-c46="">Date:</mark> 10.12.2021 - 18:30<br _ngcontent-sml-c46=""><mark _ngcontent-sml-c46="">Price:</mark> 25 €<br _ngcontent-sml-c46=""><div _ngcontent-sml-c46=""><mark _ngcontent-sml-c46="">Avaible tickets:</mark><b _ngcontent-sml-c46=""><span _ngcontent-sml-c46=""> 10 of </span> 10 tk. </b><br _ngcontent-sml-c46=""><button _ngcontent-sml-c46="" class="btn btn-success sell_btn">Sell ticket</button></div><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><div _ngcontent-sml-c46=""><p _ngcontent-sml-c46="" class="card-text mb-auto">Obcaecati facere quod assumenda ullam cupiditate sed veritatis veniam, sunt minima aperiam commodi aspernatur nemo voluptatibus at perferendis dignissimos voluptate sit, tempora. </p><hr _ngcontent-sml-c46=""><button _ngcontent-sml-c46="" class="btn btn-warning btn-mdm">Edit</button><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--></div></div></div></div></div><div _ngcontent-sml-c46="" class="col-md-4"><div _ngcontent-sml-c46="" class="card flex-md-row mb-4 box-shadow h-md-250"><div _ngcontent-sml-c46="" class="card-body d-flex flex-column align-items-start"><img _ngcontent-sml-c46="" data-holder-rendered="true" class="card-img-right flex-auto d-none d-block" style="width: 100%;" src="./TicketSystem_files/305-600x300.jpg"><div _ngcontent-sml-c46="" class="title_block"><h3 _ngcontent-sml-c46="" class="mb-0">театр</h3></div><div _ngcontent-sml-c46="" class="detail_block"><mark _ngcontent-sml-c46="">Nr.:</mark> 3<br _ngcontent-sml-c46=""><mark _ngcontent-sml-c46="">Date:</mark> 15.10.2022 - 15:00<br _ngcontent-sml-c46=""><mark _ngcontent-sml-c46="">Price:</mark> 150 €<br _ngcontent-sml-c46=""><div _ngcontent-sml-c46=""><mark _ngcontent-sml-c46="">Avaible tickets:</mark><b _ngcontent-sml-c46=""><span _ngcontent-sml-c46=""> 1 of </span> 1 tk. </b><br _ngcontent-sml-c46=""><button _ngcontent-sml-c46="" class="btn btn-success sell_btn">Sell ticket</button></div><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><div _ngcontent-sml-c46=""><p _ngcontent-sml-c46="" class="card-text mb-auto">Obcaecati facere quod assumenda ullam cupiditate sed veritatis veniam. </p><hr _ngcontent-sml-c46=""><button _ngcontent-sml-c46="" class="btn btn-warning btn-mdm">Edit</button><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--></div></div></div></div></div><div _ngcontent-sml-c46="" class="col-md-4"><div _ngcontent-sml-c46="" class="card flex-md-row mb-4 box-shadow h-md-250"><div _ngcontent-sml-c46="" class="card-body d-flex flex-column align-items-start"><img _ngcontent-sml-c46="" data-holder-rendered="true" class="card-img-right flex-auto d-none d-block" style="width: 100%;" src="./TicketSystem_files/1015-600x300.jpg"><div _ngcontent-sml-c46="" class="title_block"><h3 _ngcontent-sml-c46="" class="mb-0">кино</h3></div><div _ngcontent-sml-c46="" class="detail_block"><mark _ngcontent-sml-c46="">Nr.:</mark> 4<br _ngcontent-sml-c46=""><mark _ngcontent-sml-c46="">Date:</mark> 18.09.2021 - 10:00<br _ngcontent-sml-c46=""><mark _ngcontent-sml-c46="">Price:</mark> 59 €<br _ngcontent-sml-c46=""><div _ngcontent-sml-c46=""><mark _ngcontent-sml-c46="">Avaible tickets:</mark><b _ngcontent-sml-c46=""><span _ngcontent-sml-c46=""> 50 of </span> 50 tk. </b><br _ngcontent-sml-c46=""><button _ngcontent-sml-c46="" class="btn btn-success sell_btn">Sell ticket</button></div><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><div _ngcontent-sml-c46=""><p _ngcontent-sml-c46="" class="card-text mb-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p><hr _ngcontent-sml-c46=""><button _ngcontent-sml-c46="" class="btn btn-warning btn-mdm">Edit</button><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--></div></div></div></div></div><div _ngcontent-sml-c46="" class="col-md-4"><div _ngcontent-sml-c46="" class="card flex-md-row mb-4 box-shadow h-md-250"><div _ngcontent-sml-c46="" class="card-body d-flex flex-column align-items-start"><img _ngcontent-sml-c46="" data-holder-rendered="true" class="card-img-right flex-auto d-none d-block" style="width: 100%;" src="./TicketSystem_files/325-600x300.jpg"><div _ngcontent-sml-c46="" class="title_block"><h3 _ngcontent-sml-c46="" class="mb-0">опера</h3></div><div _ngcontent-sml-c46="" class="detail_block"><mark _ngcontent-sml-c46="">Nr.:</mark> 5<br _ngcontent-sml-c46=""><mark _ngcontent-sml-c46="">Date:</mark> 30.12.2021 - 17:15<br _ngcontent-sml-c46=""><mark _ngcontent-sml-c46="">Price:</mark> 25 €<br _ngcontent-sml-c46=""><div _ngcontent-sml-c46=""><mark _ngcontent-sml-c46="">Avaible tickets:</mark><b _ngcontent-sml-c46=""><span _ngcontent-sml-c46=""> 5 of </span> 5 tk. </b><br _ngcontent-sml-c46=""><button _ngcontent-sml-c46="" class="btn btn-success sell_btn">Sell ticket</button></div><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><div _ngcontent-sml-c46=""><p _ngcontent-sml-c46="" class="card-text mb-auto">Obcaecati facere quod assumenda ullam cupiditate sed veritatis veniam, sunt minima aperiam commodi aspernatur nemo voluptatibus at perferendis dignissimos voluptate sit, tempora. </p><hr _ngcontent-sml-c46=""><button _ngcontent-sml-c46="" class="btn btn-warning btn-mdm">Edit</button><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--></div></div></div></div></div><div _ngcontent-sml-c46="" class="col-md-4"><div _ngcontent-sml-c46="" class="card flex-md-row mb-4 box-shadow h-md-250"><div _ngcontent-sml-c46="" class="card-body d-flex flex-column align-items-start"><img _ngcontent-sml-c46="" data-holder-rendered="true" class="card-img-right flex-auto d-none d-block" style="width: 100%;" src="./TicketSystem_files/416-600x300.jpg"><div _ngcontent-sml-c46="" class="title_block"><h3 _ngcontent-sml-c46="" class="mb-0">мюзикл</h3></div><div _ngcontent-sml-c46="" class="detail_block"><mark _ngcontent-sml-c46="">Nr.:</mark> 6<br _ngcontent-sml-c46=""><mark _ngcontent-sml-c46="">Date:</mark> 05.11.2022 - 19:00<br _ngcontent-sml-c46=""><mark _ngcontent-sml-c46="">Price:</mark> 150 €<br _ngcontent-sml-c46=""><div _ngcontent-sml-c46=""><mark _ngcontent-sml-c46="">Avaible tickets:</mark><b _ngcontent-sml-c46=""><span _ngcontent-sml-c46=""> 250 of </span> 250 tk. </b><br _ngcontent-sml-c46=""><button _ngcontent-sml-c46="" class="btn btn-success sell_btn">Sell ticket</button></div><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><div _ngcontent-sml-c46=""><p _ngcontent-sml-c46="" class="card-text mb-auto">Obcaecati facere quod assumenda ullam cupiditate sed veritatis veniam. </p><hr _ngcontent-sml-c46=""><button _ngcontent-sml-c46="" class="btn btn-warning btn-mdm">Edit</button><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--></div></div></div></div></div><div _ngcontent-sml-c46="" class="col-md-4"><div _ngcontent-sml-c46="" class="card flex-md-row mb-4 box-shadow h-md-250"><div _ngcontent-sml-c46="" class="card-body d-flex flex-column align-items-start"><img _ngcontent-sml-c46="" data-holder-rendered="true" class="card-img-right flex-auto d-none d-block" style="width: 100%;" src="./TicketSystem_files/625-600x300.jpg"><div _ngcontent-sml-c46="" class="title_block"><h3 _ngcontent-sml-c46="" class="mb-0">театр</h3></div><div _ngcontent-sml-c46="" class="detail_block"><mark _ngcontent-sml-c46="">Nr.:</mark> 7<br _ngcontent-sml-c46=""><mark _ngcontent-sml-c46="">Date:</mark> 05.11.2022 - 19:00<br _ngcontent-sml-c46=""><mark _ngcontent-sml-c46="">Price:</mark> 150 €<br _ngcontent-sml-c46=""><div _ngcontent-sml-c46=""><mark _ngcontent-sml-c46="">Avaible tickets:</mark><b _ngcontent-sml-c46=""><span _ngcontent-sml-c46=""> 10 of </span> 10 tk. </b><br _ngcontent-sml-c46=""><button _ngcontent-sml-c46="" class="btn btn-success sell_btn">Sell ticket</button></div><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><div _ngcontent-sml-c46=""><p _ngcontent-sml-c46="" class="card-text mb-auto">Obcaecati facere quod assumenda ullam cupiditate sed veritatis veniam. </p><hr _ngcontent-sml-c46=""><button _ngcontent-sml-c46="" class="btn btn-warning btn-mdm">Edit</button><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--></div></div></div></div></div><div _ngcontent-sml-c46="" class="col-md-4"><div _ngcontent-sml-c46="" class="card flex-md-row mb-4 box-shadow h-md-250"><div _ngcontent-sml-c46="" class="card-body d-flex flex-column align-items-start"><img _ngcontent-sml-c46="" data-holder-rendered="true" class="card-img-right flex-auto d-none d-block" style="width: 100%;" src="./TicketSystem_files/1012-600x300.jpg"><div _ngcontent-sml-c46="" class="title_block"><h3 _ngcontent-sml-c46="" class="mb-0">цирк</h3></div><div _ngcontent-sml-c46="" class="detail_block"><mark _ngcontent-sml-c46="">Nr.:</mark> 8<br _ngcontent-sml-c46=""><mark _ngcontent-sml-c46="">Date:</mark> 05.11.2022 - 19:00<br _ngcontent-sml-c46=""><mark _ngcontent-sml-c46="">Price:</mark> 150 €<br _ngcontent-sml-c46=""><div _ngcontent-sml-c46=""><mark _ngcontent-sml-c46="">Avaible tickets:</mark><b _ngcontent-sml-c46=""><span _ngcontent-sml-c46=""> 25 of </span> 25 tk. </b><br _ngcontent-sml-c46=""><button _ngcontent-sml-c46="" class="btn btn-success sell_btn">Sell ticket</button></div><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><div _ngcontent-sml-c46=""><p _ngcontent-sml-c46="" class="card-text mb-auto">Obcaecati facere quod assumenda ullam cupiditate sed veritatis veniam. </p><hr _ngcontent-sml-c46=""><button _ngcontent-sml-c46="" class="btn btn-warning btn-mdm">Edit</button><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--></div></div></div></div></div><div _ngcontent-sml-c46="" class="col-md-4"><div _ngcontent-sml-c46="" class="card flex-md-row mb-4 box-shadow h-md-250"><div _ngcontent-sml-c46="" class="card-body d-flex flex-column align-items-start"><img _ngcontent-sml-c46="" data-holder-rendered="true" class="card-img-right flex-auto d-none d-block" style="width: 100%;" src="./TicketSystem_files/419-600x300.jpg"><div _ngcontent-sml-c46="" class="title_block"><h3 _ngcontent-sml-c46="" class="mb-0">опера</h3></div><div _ngcontent-sml-c46="" class="detail_block"><mark _ngcontent-sml-c46="">Nr.:</mark> 9<br _ngcontent-sml-c46=""><mark _ngcontent-sml-c46="">Date:</mark> 05.11.2022 - 19:00<br _ngcontent-sml-c46=""><mark _ngcontent-sml-c46="">Price:</mark> 150 €<br _ngcontent-sml-c46=""><div _ngcontent-sml-c46=""><mark _ngcontent-sml-c46="">Avaible tickets:</mark><b _ngcontent-sml-c46=""><span _ngcontent-sml-c46=""> 15 of </span> 15 tk. </b><br _ngcontent-sml-c46=""><button _ngcontent-sml-c46="" class="btn btn-success sell_btn">Sell ticket</button></div><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><div _ngcontent-sml-c46=""><p _ngcontent-sml-c46="" class="card-text mb-auto">Obcaecati facere quod assumenda ullam cupiditate sed veritatis veniam. </p><hr _ngcontent-sml-c46=""><button _ngcontent-sml-c46="" class="btn btn-warning btn-mdm">Edit</button><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--></div></div></div></div></div><div _ngcontent-sml-c46="" class="col-md-4"><div _ngcontent-sml-c46="" class="card flex-md-row mb-4 box-shadow h-md-250"><div _ngcontent-sml-c46="" class="card-body d-flex flex-column align-items-start"><img _ngcontent-sml-c46="" data-holder-rendered="true" class="card-img-right flex-auto d-none d-block" style="width: 100%;" src="./TicketSystem_files/38-600x300.jpg"><div _ngcontent-sml-c46="" class="title_block"><h3 _ngcontent-sml-c46="" class="mb-0">концерт</h3></div><div _ngcontent-sml-c46="" class="detail_block"><mark _ngcontent-sml-c46="">Nr.:</mark> 10<br _ngcontent-sml-c46=""><mark _ngcontent-sml-c46="">Date:</mark> 05.11.2022 - 19:00<br _ngcontent-sml-c46=""><mark _ngcontent-sml-c46="">Price:</mark> 150 €<br _ngcontent-sml-c46=""><div _ngcontent-sml-c46=""><mark _ngcontent-sml-c46="">Avaible tickets:</mark><b _ngcontent-sml-c46=""><span _ngcontent-sml-c46=""> 5 of </span> 5 tk. </b><br _ngcontent-sml-c46=""><button _ngcontent-sml-c46="" class="btn btn-success sell_btn">Sell ticket</button></div><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--><div _ngcontent-sml-c46=""><p _ngcontent-sml-c46="" class="card-text mb-auto">Obcaecati facere quod assumenda ullam cupiditate sed veritatis veniam. </p><hr _ngcontent-sml-c46=""><button _ngcontent-sml-c46="" class="btn btn-warning btn-mdm">Edit</button><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--></div></div></div></div></div><!--bindings={
+  "ng-reflect-ng-for-of": "1,концерт,01.09.2021,12:00,59,"
+}--></div></div></div></app-event><!--container--></div></app-root>
+<script src="./TicketSystem_files/runtime.js.Без названия" defer=""></script><script src="./TicketSystem_files/polyfills.js.Без названия" defer=""></script><script src="./TicketSystem_files/styles.js.Без названия" defer=""></script><script src="./TicketSystem_files/vendor.js.Без названия" defer=""></script><script src="./TicketSystem_files/main.js.Без названия" defer=""></script>
+
+<iframe id="webpack-dev-server-client-overlay" src="./TicketSystem_files/saved_resource.html" style="position: fixed; inset: 0px; width: 100vw; height: 100vh; border: none; z-index: 2147483647;"></iframe></body></html>
